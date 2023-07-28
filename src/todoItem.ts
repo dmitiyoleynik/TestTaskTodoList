@@ -30,9 +30,6 @@ export default class TodoItem {
     this.wrapper.appendChild(this.select);
     this.wrapper.appendChild(this.deleteButton);
 
-    this.onSelect = this.onSelect.bind(this);
-    this.onInput = this.onInput.bind(this);
-
     this.input.addEventListener("input", this.onInput);
     this.select.addEventListener("change", this.onSelect);
   }
@@ -60,13 +57,13 @@ export default class TodoItem {
     this.wrapper.classList.add(this.getStatusClass());
   }
 
-  onSelect(e: Event) {
+  onSelect=(e: Event)=> {
     const selectedValue = (e.target as HTMLSelectElement).value;
     this.status = selectedValue;
     this.changeStatusColor();
   }
 
-  onInput(e: Event) {
+  onInput=(e: Event)=> {
     const inputValue = (e.target as HTMLInputElement).value;
     this.description = inputValue;
   }
