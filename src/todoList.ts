@@ -1,4 +1,5 @@
-import { TodoItem } from "./todoItem";
+import DateTodoItem from "./DateTodoItem";
+import TodoItem from "./todoItem";
 
 export class TodoList {
   items: Map<number, TodoItem>;
@@ -37,7 +38,7 @@ export class TodoList {
       this.todoItems.removeChild(this.items.get(id).render());
     };
 
-    const todo = new TodoItem("Planed", "", deleteHandler);
+    const todo = new DateTodoItem("Planed", "", new Date(), deleteHandler);
     this.items.set(id, todo);
     this.todoItems.appendChild(todo.render());
   }

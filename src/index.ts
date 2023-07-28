@@ -1,5 +1,4 @@
 require("./index.css");
-import { TodoItem } from "./todoItem";
 import { TodoList } from "./todoList";
 
 function init() {

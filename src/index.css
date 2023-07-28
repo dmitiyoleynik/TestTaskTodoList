@@ -92,7 +92,6 @@ footer {
   border: none;
   border-radius: 3px;
   padding: 5px 10px;
-  margin-left: 10px;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
@@ -118,4 +117,12 @@ footer {
 
 .status-in-progress {
   background-color: #81d4fa;
+}
+
+.urgency {
+  margin: 0 10px;
+}
+
+.date {
+  margin: 0 10px;
 }

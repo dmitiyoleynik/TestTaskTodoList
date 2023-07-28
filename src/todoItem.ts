@@ -1,4 +1,4 @@
-export class TodoItem {
+export default class TodoItem {
   status: string;
   description: string;
   wrapper: HTMLDivElement;
