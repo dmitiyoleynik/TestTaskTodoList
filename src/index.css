@@ -50,7 +50,7 @@ footer {
   flex-direction: column;
 }
 
-.footer-nav  a {
+.footer-nav a {
   color: #333;
   text-decoration: none;
   margin: 5px 0;
@@ -60,6 +60,62 @@ footer {
   transition: color 0.3s ease;
 }
 
-.footer-nav  a:hover {
+.footer-nav a:hover {
   color: #007bff;
+}
+
+.todo-list {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.add-todo {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.add-todo:active,
+.todo-item-delete-button:active {
+  opacity: 0.8;
+}
+
+.todo-item-delete-button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.todo-list-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-item {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.status-planed {
+  background-color: #ffe082;
+}
+
+.status-done {
+  background-color: #c8e6c9;
+}
+
+.status-in-progress {
+  background-color: #81d4fa;
 }
